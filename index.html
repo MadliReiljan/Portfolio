@@ -1,25 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--===================== FONT TYPE AND CSS =====================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Portfolio</title>
-</head>
-<body>
-
+  </head>
+  <body>
+<!--======= NAV BAR =======-->
     <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">Madli Reiljan</a></li>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About Me</a></li>
-            <li class="item"><a href="#">Skills</a></li>
-            <li class="item"><a href="#">Portfolio</a></li>
-            <li class="item"><a href="#">Contact</a></li>
-            <li class="toggle"><span class="bars"></span></li>
+      <div class="nav__content">
+        <div class="logo">
+          <a href="index.html">Madli Reiljan</a>
+        </div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#down">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
+      </div>
     </nav>
-
-</body>
+    <!--========== ESIMENE LEHT ==========-->
+    <section class="section" id="down">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Madli,<br /></span> a high school graduate. 
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! I'm Madli, a skilled and
+            creative person with a passion for creating something new and beautiful.
+            I've worked on a few web projects, such as
+            personal websites and a few experimental sites.
+            You can see them on the Portfolio page.
+          </p>
+        </div>
+        <div class="image">
+          <img src="assets/profile.jpg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <!--========= TEINE LEHT ========-->
+    <section id="about" class="about">
+      <div class="about_me">
+        <div class="about_img">
+          <img src="assets/water2.jpg" alt="water"/>
+        </div>
+        <div class="content2">
+            <h1 class="title2">About <span>Me</span></h1>
+            <p class="description2">
+              I was born in Tartu and have lived here my whole life. From an young age I have been a really creative kid. 
+              Creating art has been my main aspiration and nothing  can taken it away from me. 
+              In highschool I got to know more about digital art and programming. 
+              Since then I have started to create my own little projects. 
+              It ranges from digital art to 3-D art and web design.
+              I've always had a strong desire to learn and discover new things, because of this, I am constantly looking for ways to educate myself.
+              Whether it's taking a wide range of courses, attending workshops, or doing my own research projects, I enjoy diving into unfamiliar topics. 
+              This has helped me develop the ability to quickly understand complex ideas, adapt to different learning situations, and bring together information from different sources. 
+              I thrive when faced with intellectual challenges and actively pursue chances to learn new skills and expand my knowledge so I can stay up-to-date in my field.
+              I'm a sociable and interactive person who thrives in collaborative environments. 
+              I enjoy working with others and believe that the best ideas are born through open dialogue and teamwork. 
+              My friendly and kind nature makes me approachable and easy to work with.
+              
+            </p>
+        </div>
+      </div>
+    </section>
+    <!--========= KOLMAS LEHT ==========-->
+    <section id="education" class="education">
+      <div class="education__container">
+        <div class="title3">
+          <h3></h3>Education
+        </div>
+        <div class="content3">
+          <div class="description3">
+            <img class="portrait1" src="https://www.yle.edu.ee/wp-content/uploads/2021/12/koolimaja-banner.jpg">
+            <p class="kool1">Ülenurme Gümnaasium  2011 - 2023</p> 
+            <div class="text1">
+               <ul class="bullet-points">
+                 <li class="bullet-point">Primary, middle and high school education</li>
+               </ul>
+               <ul class="bullet-points">
+                <li class="bullet-point"> GPA - 4.7</li>
+               </ul>
+               <ul class="bullet-points">
+                <li class="bullet-point"> Informatics, architecture, programming (Python)</li>
+               </ul>
+               <ul class="bullet-points">
+                <li class="bullet-point"> CAE exam: C1 (182p)</li>
+               </ul>
+               <ul class="bullet-points">
+                <li class="bullet-point"> School exam: Programming (85%) </li>
+               </ul>
+            </div>
+          </div>
+        </div>
+       <div class="content6">
+        <div class="description4">
+          <img class="portrait2" src="https://f10.pmo.ee/RyyCnMTLMEeAe2UaszdJAzSmaVU=/685x0/nginx/o/2016/11/07/6044745t1hab30.jpg">
+          <p class="kool2">Tartu Laste Kunstikool 2018 - 2021</p>
+          <div class="text2">
+            <ul class="bullet-points">
+              <li class="bullet-point">Studio study</li>
+            </ul>
+            <ul class="bullet-points">
+             <li class="bullet-point"> GPA - A</li>
+            </ul>
+            <ul class="bullet-points">
+              <li class="bullet-point"> Visual arts</li>
+             </ul>
+             <ul class="bullet-points">
+              <li class="bullet-point"> Art history</li>
+             </ul>
+             <ul class="bullet-points">
+              <li class="bullet-point"> Computer graphics</li>
+             </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h4>©MadliReiljan 2023</h4>
+    </footer>
+  </body>
 </html>
