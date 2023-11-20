@@ -21,10 +21,34 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 body {
   font-family: "Poppins", sans-serif;
   padding-top: 76px;
+  margin: 0;
 }
+
+/*====== NUPP ALLA ======*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+section#down {
+  scroll-margin-top: 100px;
+}
+/* Adjust the scroll position for the "About Me" section */
+section#about {
+  scroll-margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Adjust the scroll position for the "Education" section */
+section#education {
+  scroll-margin-top: 10px; /* Adjust the value as needed */
+}
+
 
 /* ======== NAVIGATION (ÃœLEMINE RIDA) ========*/
 nav {
@@ -94,11 +118,11 @@ ul li a:hover {
 
 /* ======= ESIMENE LEHT ====== */
 .section {
-  background-color: #FFE9DE;
+  background-color: #f7eae1;
 }
 
 .section__container {
-  min-height: 40vh;
+  min-height: 60vh;
   max-width: 1200px;
   margin: auto;
   margin-bottom: -3rem;
@@ -106,7 +130,7 @@ ul li a:hover {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .content {
@@ -140,23 +164,6 @@ ul li a:hover {
   margin-bottom: 2rem;
 }
 
-.action__btns {
-  display: flex;
-  gap: 1rem;
-}
-
-.action__btns button {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  outline: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 .image {
   display: grid;
   place-items: center;
@@ -167,34 +174,14 @@ ul li a:hover {
   border-radius: 50%;
 }
 
-
-/*====== NUPP ALLA ======*/
-
-html {
-  scroll-behavior: smooth;
-}
-
-section#down {
-  scroll-margin-top: 100px;
-}
-/* Adjust the scroll position for the "About Me" section */
-section#about {
-  scroll-margin-top: 80px; /* Adjust the value as needed */
-}
-
-/* Adjust the scroll position for the "Education" section */
-section#education {
-  scroll-margin-top: 10px; /* Adjust the value as needed */
-}
-
 /*=========== ABOUT ME ===========*/
 
 .about {
-  background-color: var(--extra-light);
+  background-color: white;
 }
 
 .about_me {
-  min-height: 90vh;
+  min-height: 50vh;
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -237,137 +224,32 @@ section#education {
 
   display: grid;
   align-items: center;
-  width: min(25rem, 90%);
+  width: min(30rem, 100%);
   border-radius: 10%;
-}
-
-
-/*=========== EDUCATION ==========*/
-
-.education {
-  background-color: var(--extra-light);
-}
-
-.education__container {
-  min-height: 90vh;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-}
-
-.title3 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-  color: var(--text-dark);
-  display: grid;
-  grid-row: 1 / 2;
-  grid-column: 1 /3;
-  text-align: center;
-}
-
-.content3 {
-  display: flex;
-  flex-direction: column;
-}
-
-.description3 {
-  line-height: 1.5rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content6 {
-  display: flex;
-  flex-direction: column;
-}
-
-.description4 {
-  line-height: 1.5rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-  display: grid;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portrait1 {
-  width: 500px;
-  border: 2px solid #4b4946;
-  display: grid;
-}
-
-.portrait2 {
-  width: 475px;
-  border: 2px solid #4b4946;
-  display: grid;
-}
-
-.kool1 {
-  padding-left: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--text-dark);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.kool2 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  padding-left: 1rem;
-  color: var(--text-dark);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.text1 {
-  padding-left: 2rem;
-}
-
-.text2 {
-  padding-left: 2rem;
-}
-
-.bullet-points {
-  margin-left: 1.5rem;
-}
-
-.bullet-point {
-  display: list-item; /* Display list items as list items */
-  list-style: disc;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
 }
 
 
 /*=========== PORTFOLIO ===========*/
 
 .portfolio2 {
-  background-color: var(--extra-light);
+  background-color: #f7eae1;
 }
 
 
 .portfolio__container {
-  max-width: 90rem;
+  max-width: 80rem;
   min-height: 90vh;
   padding: 0.5rem;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 1rem;
+  gap: 1rem
 }
 
 .portfolio2 h2 {
-  margin-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .portfolio__container .portfolio-box {
@@ -454,7 +336,7 @@ section#education {
 /*=========== FOOTER ===========*/
 
 .footer {
-  background-color: #FFE9DE;
+  background-color: var(--extra-light);
   height: 5vh;
   display: flex;
   align-items: center;
@@ -515,13 +397,13 @@ section#education {
   ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 85px);
+    height: 78vh;
     left: -100%;
-    top: 80px;
-    background-color: var(--extra-light);
+    top: 84px;
+    background-color: #FFE9DE;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   nav #check:checked ~ ul {
@@ -529,25 +411,20 @@ section#education {
   }
 
   ul li a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
+    margin-top: -13rem;
   }
 
   .about_me {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .education__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: 1fr;
   }
 
 
@@ -599,14 +476,13 @@ section#education {
   ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 85px);
+    height: 78vh;
     left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
+    top: 84px;
+    background-color: #FFE9DE;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
-
+    gap: 4rem;
   }
 
   nav #check:checked ~ ul {
@@ -614,7 +490,7 @@ section#education {
   }
 
   ul li a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .section__container {
@@ -629,11 +505,7 @@ section#education {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .education__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
+ 
 
   .title3,
   .content3,
