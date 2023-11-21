@@ -4,7 +4,7 @@
 :root {
   --primary-color: #e9b019;
   --primary-color-dark: #ffb700;
-  --secondary-color: #ca8a04;
+  --secondary-color: #a67c67;
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --extra-light: #faf5ff;
@@ -249,8 +249,8 @@ ul li a:hover {
 }
 
 .portfolio2 h2 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .portfolio__container .portfolio-box {
@@ -277,7 +277,7 @@ ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(255, 166, 0, 0.637), var(--secondary-color));
+  background: linear-gradient(rgba(255, 102, 0, 0.637), var(--secondary-color));
   display: flex;
   justify-content: center;
   align-items: center;
