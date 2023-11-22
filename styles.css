@@ -162,6 +162,7 @@ ul li a:hover {
   line-height: 1.5rem;
   color: var(--text-light);
   margin-bottom: 2rem;
+  font-size: 18px;
 }
 
 .image {
@@ -212,21 +213,34 @@ ul li a:hover {
 .description2 {
   line-height: 1.5rem;
   color: var(--text-light);
-  margin-bottom: 5rem;
   place-items: center;
+  font-size: 18px;
 }
 
 .about_img {
   display: grid;
   place-items: center;
 }
-
 .about_img img {
 
   display: grid;
   align-items: center;
   width: min(25rem, 100%);
   border-radius: 10%;
+}
+
+.line1 {
+  margin-bottom: 1rem;
+  border: none;
+  height: 3px;
+  background-color: #f7eae1;
+}
+.line2 {
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  border: none;
+  height: 3px;
+  background-color: #f7eae1;
 }
 
 /*=========== SKILLS ========== */
@@ -236,24 +250,36 @@ ul li a:hover {
 }
 .header {
   text-align: center;
-  padding: 1rem;
+  padding-top: 1rem;
   position: relative;
 }
-
+.line {
+  border: none;
+  height: 5px;
+  width: 20%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
 .skills_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
   justify-content: center;
-  align-items: center;
   text-align: center;
   gap: 1rem;
   padding: 1rem 80px;
   font-size: 1.2rem;
+  max-width: var(--max-width);
 }
 .skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
   padding: 1rem;
   color: var(--text-dark);
-  cursor: pointer;
 }
 .skill-title {
   display: flex;
@@ -263,10 +289,18 @@ ul li a:hover {
   margin-bottom: 0.5rem;
 }
 .skill-icon {
-  width: 30%;
+  width: 25%;
 }
 .skill-icon2 {
-  width: 38%;
+  width: 33%;
+}
+
+.skill-box p {
+  align-self: flex-start; 
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*=========== PORTFOLIO ===========*/
@@ -293,12 +327,13 @@ ul li a:hover {
 }
 
 .portfolio__container .portfolio-box {
-  border: 2px solid #4b4946;
-  background-color: #000000;
+  border: 5px solid #f7eae1;
+  background-color: #f7eae1;
   position: relative;
   border-radius: 2rem;
   overflow: hidden;
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .portfolio-box img {
@@ -348,7 +383,7 @@ ul li a:hover {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background-color: #ffdb79 ;
+  background-color: #ffffff ;
   border-radius: 50%;
 }
 
@@ -373,10 +408,57 @@ ul li a:hover {
   place-items: center;
 }
 
+/*----- CONTACT PAGE -----*/
+.forms{
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #f7eae1;
+  letter-spacing: 1px;
+}
+
+.form-main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7eae1;
+  color: var(--text-light);
+  text-align: left;
+  align-items: center;
+  order: 1;
+  margin: 0 auto;
+}
+
+#contact-header p {
+  white-space: nowrap; 
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: #f7eae1;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: var(--text-dark);
+  margin-top: 2rem;
+  border: 5px solid #ffffff;
+  border-radius: 10px; 
+  padding: 20px;
+}
+
+
+
 /*=========== FOOTER ===========*/
 
 .footer {
-  background-color: #f7eae1;
+  background-color: #ffffff;
   height: 5vh;
   display: flex;
   align-items: center;
