@@ -334,6 +334,7 @@ ul li a:hover {
   overflow: hidden;
   display: flex;
   margin-bottom: 2rem;
+  height: 400px;
 }
 
 .portfolio-box img {
@@ -351,13 +352,14 @@ ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(247, 147, 80, 0.637), var(--secondary-color));
+  background: linear-gradient(rgba(255, 255, 255, 0.744), var(--extra-light));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
+  height: 100%;
   transform: translateY(100%);
   transition: .5s ease;
 }
@@ -383,7 +385,7 @@ ul li a:hover {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background-color: #ffffff ;
+  color: #000000;
   border-radius: 50%;
 }
 
