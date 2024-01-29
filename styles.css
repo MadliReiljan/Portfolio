@@ -39,14 +39,11 @@ html {
 section#down {
   scroll-margin-top: 100px;
 }
-/* Adjust the scroll position for the "About Me" section */
 section#about {
-  scroll-margin-top: 80px; /* Adjust the value as needed */
+  scroll-margin-top: 10rem; 
 }
-
-/* Adjust the scroll position for the "Education" section */
-section#education {
-  scroll-margin-top: 10px; /* Adjust the value as needed */
+section#skills {
+  scroll-margin-top:10rem;
 }
 
 
@@ -79,17 +76,8 @@ nav .logo a:hover {
   color: #a67c67;
 }
 
-nav .checkbox {
-  display: none;
-}
-
 nav input {
   display: none;
-}
-nav .checkbox i {
-  font-size: 2rem;
-  color: var(--primary-color);
-  cursor: pointer;
 }
 
 ul {
@@ -245,25 +233,31 @@ ul li a:hover {
 
 /*=========== SKILLS ========== */
 .inner {
-  padding-top: 20px;
+  padding-top: 2px;
   background-color: #f7eae1;
 }
+
+.title3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-top: 2rem;
+}
+.title3 span {
+  font-weight: 600;
+}
+
 .header {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: rem;
   position: relative;
 }
-.line {
-  border: none;
-  height: 5px;
-  width: 20%;
-  background-color: white;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
+
 .skills_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
   margin: auto;
   justify-content: center;
   text-align: center;
@@ -289,18 +283,10 @@ ul li a:hover {
   margin-bottom: 0.5rem;
 }
 .skill-icon {
-  width: 25%;
+  width: 45%;
 }
 .skill-icon2 {
-  width: 33%;
-}
-
-.skill-box p {
-  align-self: flex-start; 
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 55%;
 }
 
 /*=========== PORTFOLIO ===========*/
