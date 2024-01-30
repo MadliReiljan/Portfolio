@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-/*=========== PÃ•HI ===========*/
+/*=========== POHI ===========*/
 :root {
   --primary-color: #e9b019;
   --primary-color-dark: #ffb700;
-  --secondary-color: #a67c67;
+  --secondary-color: #d09d84;
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --extra-light: #faf5ff;
@@ -47,7 +47,7 @@ section#skills {
 }
 
 
-/* ======== NAVIGATION (ÃœLEMINE RIDA) ========*/
+/* ======== NAVIGATION (YLEMINE RIDA) ========*/
 nav {
   width: 100%;
   position: fixed;
@@ -131,7 +131,7 @@ ul li a:hover {
   letter-spacing: 2px;
   color: var(--text-light);
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -140,6 +140,7 @@ ul li a:hover {
   line-height: 3rem;
   color: var(--text-dark);
   margin-bottom: 1rem;
+  white-space: pre-line;
 }
 
 .title span {
@@ -161,6 +162,38 @@ ul li a:hover {
 .image img {
   width: min(25rem, 90%);
   border-radius: 50%;
+}
+
+.action_btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.action_btn a {
+  text-decoration: none; 
+}
+
+.action_btn a {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 10px 2rem;
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttonstyle {
+  background-color: var(--secondary-color);
+  color: white;
+  display: inline-block;
+}
+
+.buttonstyle:hover {
+  background-color: #f7eae1;
+  color: #000000;
 }
 
 /*=========== ABOUT ME ===========*/
@@ -295,21 +328,19 @@ ul li a:hover {
   background-color: white;
 }
 
-
 .portfolio__container {
   max-width: 80rem;
   min-height: 90vh;
-  padding: 0.5rem;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .portfolio2 h2 {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .portfolio__container .portfolio-box {
@@ -344,7 +375,7 @@ ul li a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 2rem;
   height: 100%;
   transform: translateY(100%);
   transition: .5s ease;
@@ -495,7 +526,7 @@ ul li a:hover {
 
 @media (max-width: 991px) {
   .portfolio2 {
-    padding-bottom: 7rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -531,10 +562,19 @@ ul li a:hover {
     margin-top: -13rem;
   }
 
+  .action_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .about_me {
-    padding: 10rem 1rem 5rem 1rem;
+    padding: 5rem 1rem 1rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .title2 {
+    margin-top: 2rem;
   }
 
   .skills_container {
@@ -572,7 +612,11 @@ ul li a:hover {
   }
 
   .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__container .portfolio-box {
+    height: 500px;
   }
 
   .portfolio-box .portfolio-layer {
