@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('typed-text');
-    const textToType = "I am Madli Reiljan,\nJunior Software Developer.";
+    const textToType = "Junior Software Developer.";
   
     function typeWriterEffect(text, index) {
       if (index < text.length) {
