@@ -179,7 +179,7 @@ ul li a:hover {
   letter-spacing: 2px;
   padding: 10px 2rem;
   outline: none;
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
@@ -471,7 +471,6 @@ ul li a:hover {
   border-radius: 10px; 
   padding: 20px;
 }
-
 
 
 /*=========== FOOTER ===========*/

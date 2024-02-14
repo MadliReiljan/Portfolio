@@ -1,3 +1,4 @@
+// Text writer
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('typed-text');
     const textToType = "Junior Software Developer.";
